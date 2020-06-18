@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title></title>
+</head>
+<body>
+n
+
+
+<nav id="navbar">
+  <ul>
+  <header align="center">HTML Iframes</header>
+  
+    <li><a class="nav-link" href="#Definition">Definition</a></li>
+    <li><a class="nav-link" href="#Syntax">Syntax</a></li>
+    <li><a class="nav-link" href="#Example">Example</a></li>
+    <li><a class="nav-link" href="#Tag_Attributes">Tag Attributes</a></li>
+    
+
+    <li><a class="nav-link" href="#Remove_the_Border">Remove the Border</a></li>
+    <li><a class="nav-link" href="#Target_for_a_Link">Target for a Link</a></li>
+    <li><a class="nav-link" href="#Reference">Reference</a></li>
+  </ul>
+</nav>
+
+<main id="main-doc">
+  <section class="main-section" id="Definition">
+    <header>Definition</header>
+    <article>
+      <p>T HTML frames are used to divide your browser window into multiple sections where each section can load a separate HTML document. A collection of frames in the browser window is known as a frameset. The window is divided into frames in a similar way the tables are organized: into rows and columns.</p>
+
+      <p>You can define an inline frame with HTML tag < iframe>. The < iframe> tag is not somehow related to < frameset> tag, instead, it can appear anywhere in your document. The < iframe> tag defines a rectangular region within the document in which the browser can display a separate document, including scrollbars and borders. An inline frame is used to embed another document within the current HTML document.</p>
+    </article>
+  </section>
+
+  <section class="main-section" id="Syntax">
+    <header>Syntax</header>
+    <article>
+      <p>
+        An HTML iframe is defined with the < iframe> tag:</p>
+
+      <code>< iframe src="URL">< /iframe> </code>
+
+      <p>The src attribute specifies the URL (web address) of the inline frame page.</p>
+    </article>
+  </section>
+
+  <section class="main-section" id="Example">
+    <header>Example</header>
+    <article>
+      <p>Following is the example to show how to use the < iframe> −</p>
+
+      <code> < !DOCTYPE html>
+< html>
+
+   < head>
+      < title>HTML Iframes< /title>
+   < /head>
+  
+   < body>
+      < p>Document content goes here...< /p>
+      
+      < iframe src = "/html/menu.htm" width = "555" height = "200">
+         Sorry your browser does not support inline frames.
+      < /iframe>
+      
+      < p>Document content also go here...< /p>
+   < /body>
+  
+< /html> </code>
+
+
+    </article>
+  </section>
+
+  <section class="main-section" id="Tag_Attributes">
+    <header>Tag Attributes</header>
+    <article>
+      <p>Most of the attributes of the < iframe> tag, including name, class, frameborder, id, longdesc, marginheight, marginwidth, name, scrolling, style, and title behave exactly like the corresponding attributes for the < frame> tag.</p>
+        <p><strong> Note </strong> -<i>The frameborder, marginwidth, longdesc, scrolling, marginheight attributes deprecated in HTML5. Do not use these attributes.</i></p>
+
+      <div>
+        <ul>
+          <li><span class="define">src</span> –This attribute is used to give the file name that should be loaded in the frame. Its value can be any URL. For example, src = "/html/top_frame.htm" will load an HTML file available in html directory.</li>
+          <li><span class="define">name</span> – The flex items are placed within the container starting from main-start and going to main-end.</li>
+
+          <li><span class="define">frameborder</span> –This attribute specifies whether or not the borders of that frame are shown; it overrides the value given in the frameborder attribute on the <frameset> tag if one is given, and this can take values either 1 (yes) or 0 (no).
+
+          fine">cross axis</span> – The axis perpendicular to the main axis is called the cross axis. Its direction depends on the main axis direction.</li>
+
+
+          <li><span class="define">marginwidth</span> | <span class="define">cross-end</span> – This attribute allows you to specify the width of the space between the left and right of the frame's borders and the frame's content. The value is given in pixels. For example marginwidth = "10".</li>
+
+
+          <li><span class="define">marginheight</span> – This attribute allows you to specify the height of the space between the top and bottom of the frame's borders and its contents. The value is given in pixels. For example marginheight = "10".</li>
+
+
+          <li><span class="define">height</span> – This attribute specifies the height of < iframe>. </li>
+
+
+          <li><span class="define">scrolling</span> – This attribute controls the appearance of the scrollbars that appear on the frame. This takes values either "yes", "no" or "auto". For example scrolling = "no" means it should not have scroll bars. </li>
+
+          <li><span class="define">longdesc</span> – This attribute allows you to provide a link to another page containing a long description of the contents of the frame. For example longdesc = "framedescription.htm" </li>
+
+          <li><span class="define">width</span> – This attribute specifies the width of < iframe>.</li>
+
+
+        </ul>
+      </div>
+    </article>
+  </section>
+
+ 
+
+  <section class="main-section" id="Remove_the_Border">
+    <header>Remove the Border</header>
+    <article>
+      <p>By default, an iframe has a border around it.</p>
+
+      <p>To remove the border, add the style attribute and use the CSS border property:</p>
+
+      <code>< iframe src="demo_iframe.htm" style="border:none;">< /iframe></code>
+
+
+      <p>With CSS, you can also change the size, style and color of the iframe's border:</p>
+
+      <code>< iframe src="demo_iframe.htm" style="border:2px solid red;">< /iframe></code>
+
+    </article>
+  </section>
+
+  <section class="main-section" id="Target_for_a_Link">
+    <header>Target for a Link</header>
+    <article>
+      <p>An iframe can be used as the target frame for a link.</p>
+
+      <p>The target attribute of the link must refer to the name attribute of the iframe:</p>
+
+      <code>< iframe src="demo_iframe.htm" name="iframe_a">< /iframe>
+
+      < p>< a href="https://www.w3schools.com" target="iframe_a">W3Schools.com< /a>< /p></code>
+
+      
+    </article>
+  </section>
+
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+      <p>All the documentation in this page is taken from
+        <a href="https://www.w3schools.com/html/html_iframe.asp" target="_blank">W3school</a> and <a href="https://www.tutorialspoint.com/html/html_iframes.htm" targe="_blank">tutorialspoint</a>
+      </p>
+    </article>
+  </section>
+
+</main>
+</body>
+</html>
